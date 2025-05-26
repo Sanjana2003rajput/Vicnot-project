@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    .contact-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.contact-form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form-section button {
+  padding: 0.7rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.company-info,
+.map-placeholder {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px  black;
+}
+
+.map-box {
+  background-color: #ddd;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+</style>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-container">
+    <section class="contact-form-section">
+      <h2>Get in Touch</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="company-info">
+      <h2>Our Address</h2>
+      <p>123 Innovation Street<br>Tech City, TX 75000<br>India</p>
+      <h3>Phone:1234567890</h3>
+      <p>+1 (123) 456-7890</p>
+      <h3>Email:</h3>
+      <p>vicnot@mywebsite.com</p>
+    </section>
+
+    <section class="map-placeholder">
+      <h2>Find Us</h2>
+      <div class="map-box">
+        <!-- Replace with an actual embedded map if needed -->
+        <p>[ Static Map Placeholder ]</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+</body>
+</html>
